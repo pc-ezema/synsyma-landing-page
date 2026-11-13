@@ -1,7 +1,7 @@
 // The only file you edit per environment.
 window.SYNSYMA_SITE = {
   // Same address the admin uses (VITE_API_URL). No trailing slash.
-  API_BASE: 'http://localhost:8000/api/v1',
+  API_BASE: 'https://dev-api.synsyma.com/api/v1',   //'http://localhost:8000/api/v1',
 
   // Store links. While empty, the buttons show "Soon". Paste the real links when the apps are live.
   APP_STORE_URL: '',   // e.g. https://apps.apple.com/app/idXXXXXXXXX
