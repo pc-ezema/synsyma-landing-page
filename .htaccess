@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# /privacy and /terms are served from privacy.html and terms.html
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/.]+)$ $1.html [L]
+
+# anyone visiting /privacy.html is sent to /privacy (the pages stay the same files)
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteRule ^(.+)\.html$ $1 [R=301,L]
